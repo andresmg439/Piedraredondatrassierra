@@ -1,0 +1,83 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Rural El Refugio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Casa Rural El Refugio</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenidos a Casa Rural El Refugio</h2>
+        <p>Disfruta de una experiencia única en un entorno natural con todas las comodidades para una escapada perfecta.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Fotos</h2>
+        <div class="galeria">
+            <img src="img/casa1.jpg" alt="Vista de la casa">
+            <img src="img/casa2.jpg" alt="Jardín y terraza">
+            <img src="img/casa3.jpg" alt="Habitación principal">
+        </div>
+    </section>
+
+    <section id="reservas">
+        <h2>Reserva tu Estancia</h2>
+        <div id="calendario"></div>
+
+        <form action="#" id="form-reserva">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha de Llegada:</label>
+            <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+
+            <label for="fecha-salida">Fecha de Salida:</label>
+            <input type="date" id="fecha-salida" name="fecha-salida" required>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="nombre-contacto">Nombre:</label>
+            <input type="text" id="nombre-contacto" name="nombre-contacto" required>
+            
+            <label for="email-contacto">Email:</label>
+            <input type="email" id="email-contacto" name="email-contacto" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Casa Rural El Refugio</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
